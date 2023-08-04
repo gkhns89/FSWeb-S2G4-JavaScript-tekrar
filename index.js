@@ -70,16 +70,29 @@ console.log(CemberinAlani(15, pi));
 	
 	
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
-
+console.log(sayilar.length);
 
 
 	var ucetambolunenler, enkucuk, enbuyuk, ucebolunenlerintoplami, besyuzdenkucuksayilar, siralisayilar, tekraredensayilar;
 	
 	//3a çözümü
 
-	/* kodlar buraya */
-	
-	
+	enbuyuk = 0;
+  for (let i = 0; i < sayilar.length; i++) {
+    if (sayilar[i] > enbuyuk) {
+      enbuyuk = sayilar[i];
+    }
+  }
+  console.log(enbuyuk);
+
+  enkucuk = 1000;
+  for (let j = 0; j < sayilar.length; j++) {
+    if (sayilar[j] < enkucuk) {
+      enkucuk = sayilar[j];
+    }
+  }
+
+  console.log(enkucuk);
 	
 	// 3b çözümü:
 
