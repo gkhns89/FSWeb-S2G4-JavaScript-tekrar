@@ -116,12 +116,16 @@ console.log(sayilar.length);
 	//3d çözümü
 	
 	besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
+	
   console.log(besyuzdenkucuksayilar);
 
 	//3e çözümü
 
-	/* kodlar buraya */
-	
+	siralisayilar = besyuzdenkucuksayilar.sort(
+    (sayiBir, sayiİki) => sayiBir - sayiİki
+  );
+
+  console.log(siralisayilar);	
 	
 	//3f çözümü
 	
