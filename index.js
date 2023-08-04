@@ -116,7 +116,7 @@ console.log(sayilar.length);
 	//3d çözümü
 	
 	besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
-	
+
   console.log(besyuzdenkucuksayilar);
 
 	//3e çözümü
@@ -129,13 +129,27 @@ console.log(sayilar.length);
 	
 	//3f çözümü
 	
-	/* kodlar buraya */
+	tekraredensayilar = [];
+  let numbers = {};
+  for (let i = 0; i < sayilar.length; i++) {
+    if (numbers[sayilar[i]]) {
+      numbers[sayilar[i]]++;
+    } else {
+      numbers[sayilar[i]] = 1;
+    }
+  }
 
+  console.log(numbers);
 
+  for (let key in numbers) {
+    if (numbers[key] > 1) {
+      tekraredensayilar.push(
+        `${key} sayısı ${numbers[key]} kere tekrar edilmiştir`
+      );
+    }
+  }
 
-
-	
-		
+  console.log(tekraredensayilar);
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 function sa(){
