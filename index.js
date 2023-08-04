@@ -110,14 +110,13 @@ console.log(sayilar.length);
 	ucebolunenlerintoplami = ucetambolunenler.reduce(
     (toplam, sayi) => toplam + sayi
   );
-  
+
   console.log(ucebolunenlerintoplami);
 	
 	//3d çözümü
 	
-	/* kodlar buraya */
-
-
+	besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
+  console.log(besyuzdenkucuksayilar);
 
 	//3e çözümü
 
